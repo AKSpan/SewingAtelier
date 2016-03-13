@@ -4,7 +4,6 @@
 var Atelier = new Marionette.Application();
 
 Atelier.on("start", function () {
-    console.log('on start',Atelier);
     if (Backbone.history){
         Backbone.history.start();
     }

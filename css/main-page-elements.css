@@ -1,0 +1,20 @@
+#header, #main-news,#main {
+    height: 150px;
+    position: relative;
+    width: auto;
+    border:1px solid black;
+}
+#nav-panel {
+    border: 1px solid black;
+    height: 40px;
+    margin: 0 5%;
+    position: relative;
+    width: 90%;
+}
+#main {
+    height: auto;
+    min-height: 100px;
+}
+#nav-panel ul li {
+    padding: 0 20px;
+}

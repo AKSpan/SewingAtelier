@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Швейное Ателье "Елена"</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main-page-elements.css">
 </head>
 <body>
-
-
 
 
 <!-- TEMPLATES -->
@@ -22,20 +22,28 @@
     <div id="main"></div>
 </script>
 
-
-<script type="text/template" id="services-template">
-    <li>Главная</li>
-    <li>Услуги</li>
-    <li>Прейскурант цен</li>
-    <li>Контакты</li>
-    <li>Вакансии</li>
-</script>
-
 <script type="text/template" id="news-template">
-    <div id="news-left-arrow">LEFT</div>
-    <div id="news-body">BODY</div>
-    <div id="news-right-arrow">RIGHT</div>
+    <li id="news-left-arrow">LEFT</li>
+    <li id="news-body">BODY</li>
+    <li id="news-right-arrow">RIGHT</li>
 </script>
+
+<script type="text/template" id="nav-template">
+    <li><a href="#">Главная</a></li>
+    <li>
+        Услуги
+        <ul style="display: none;">
+            <li><a href="#service1">Услуга1</a></li>
+            <li><a href="#service2">Услуга2</a></li>
+            <li><a href="#service3">Услуга3</a></li>
+        </ul>
+    </li>
+    <li><a href="#price-list">Прейскурант цен</a></li>
+    <li><a href="#contacts">Контакты</a></li>
+    <li><a href="#jobs">Вакансии</a></li>
+</script>
+
+
 </body>
 
 
