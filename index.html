@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Швейное Ателье "Елена"</title>
+</head>
+<body>
+
+
+
+
+<!-- TEMPLATES -->
+<script type="text/template" id="aaa">
+    </script>
+
+<script type="text/template" id="main-template">
+    <div id="header">
+        <a href="#"><img src="" alt="Швейное ателье 'Елена'"></a>
+    </div>
+    <div id="main-news"></div>
+    <div id="nav-panel"></div>
+    <div id="main"></div>
+</script>
+
+
+<script type="text/template" id="services-template">
+    <li>Главная</li>
+    <li>Услуги</li>
+    <li>Прейскурант цен</li>
+    <li>Контакты</li>
+    <li>Вакансии</li>
+</script>
+
+<script type="text/template" id="news-template">
+    <div id="news-left-arrow">LEFT</div>
+    <div id="news-body">BODY</div>
+    <div id="news-right-arrow">RIGHT</div>
+</script>
+</body>
+
+
+<script src="libs/jquery.js"></script>
+<script src="libs/underscore.js"></script>
+<script src="libs/backbone.js"></script>
+<script src="libs/backbone.marionette.js"></script>
+
+<script src="main/app_init.js"></script>
+<script src="main/router/app-router.js"></script>
+<script src="main/views/main-page-show.js"></script>
+
+<script type="text/javascript">
+    Atelier.start();
+</script>
+</html>
