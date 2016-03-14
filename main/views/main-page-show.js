@@ -3,7 +3,7 @@
  */
 Atelier.module("Main", function (Main, Atelier, Backbone, Marionette, $, _) {
     /**
-     * View для разметки главной страницы
+     * View РґР»СЏ СЂР°Р·РјРµС‚РєРё РіР»Р°РІРЅРѕР№ СЃС‚СЂР°РЅРёС†С‹
      * @type {void|*}
      */
     Main.ShowMainPage = Marionette.LayoutView.extend({
@@ -21,12 +21,12 @@ Atelier.module("Main", function (Main, Atelier, Backbone, Marionette, $, _) {
         }
     });
     /**
-     * View для блока новостей
+     * View РґР»СЏ Р±Р»РѕРєР° РЅРѕРІРѕСЃС‚РµР№
      * @type {void|*}
      */
     Main.ShowNews = Marionette.ItemView.extend({
-        tagName: 'ul',
         className: 'list-inline',
+
         template: Marionette.TemplateCache.get("#news-template"),
         events: {
             "click #news-left-arrow": "newsLeft",
@@ -41,6 +41,14 @@ Atelier.module("Main", function (Main, Atelier, Backbone, Marionette, $, _) {
         },
         newsBody: function () {
             console.log("news body")
+        },
+        onRender: function () {
+            console.log('onShowNewsRender')
+            this.$el.slick({
+                lazyLoad: 'ondemand',
+                slidesToShow: 3,
+                slidesToScroll: 1
+            })
         }
     });
     Main.ShowNavPanel = Marionette.ItemView.extend({

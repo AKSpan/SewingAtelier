@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Швейное Ателье "Елена"</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <!--<link rel="stylesheet" href="bootstrap/css/bootstrap.css">-->
     <link rel="stylesheet" href="css/main-page-elements.css">
+    <link rel="stylesheet" href="css/vendors/slick.css">
+    <link rel="stylesheet" href="css/vendors/slick-theme.css">
 </head>
 <body>
 
@@ -23,9 +25,11 @@
 </script>
 
 <script type="text/template" id="news-template">
-    <li id="news-left-arrow">LEFT</li>
-    <li id="news-body">BODY</li>
-    <li id="news-right-arrow">RIGHT</li>
+    <div><img src="img/1.jpg" alt="1"></div>
+    <div><img src="img/2.jpg" alt="1"></div>
+    <div><img src="img/3.jpg" alt="1"></div>
+    <div><img src="img/4.jpg" alt="1"></div>
+
 </script>
 
 <script type="text/template" id="nav-template">
@@ -55,6 +59,9 @@
 <script src="main/app_init.js"></script>
 <script src="main/router/app-router.js"></script>
 <script src="main/views/main-page-show.js"></script>
+
+
+<script src="libs/slick.min.js"></script>
 
 <script type="text/javascript">
     Atelier.start();
